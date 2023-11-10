@@ -1,0 +1,162 @@
+header{
+    height:50px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#041128;
+}
+.headerMenu{
+    width: auto;
+    height: 20px;
+    margin: 17px 17px;
+    color:#FFFFFF;
+}
+#headerLoginBox{
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+#headerLoginIcon{
+    width:30px;
+    height:30px;
+    margin-right : 10px;
+}
+#headerLogin{
+    width: auto;
+    height: 20px;
+    margin-right: 10px;
+    color:#FFFFFF;
+}
+main{
+    background-color: #030C1D;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.spanFont{
+    font-size:25px;
+}
+#signupWordBox{
+    height:180px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#signupBigWord{
+    font-size:35px;
+}
+#signupExplain{
+    font-size:20px;
+}
+#signupBox{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding-top: 25px;
+}
+#signupShouldWrite{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin:15px 0px;
+    padding-right:75px;
+    padding-left:40px;
+    border-right: 1px solid;
+}
+#signupEtc{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin:15px 0px;
+    padding-left:75px;
+    border-left:solid 1px;
+}
+.signupTextBox{
+    padding-bottom: 25px;
+}
+#necessaryMark{
+    padding-left:170px;
+}
+.inputBox{
+    width:240px;
+    height:46px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+#genderCkBox{
+    width:240px;
+    height:46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size:20px;
+    margin-top: 15px;
+    font-size:20px;
+}
+#signupButton{
+    width:200px;
+    height:70px;
+    margin-top: 85px;
+    margin-left: 250px;
+    background-color: #061836;
+    color:#FFFFFF;
+    margin-bottom:150px;
+}
+footer{
+    background-color:#314158;
+    width:100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerIconBox{
+    margin-bottom: 30px;
+}
+.footerIcon{
+    width:30px;
+    height:30px;
+    margin: 15px 15px;
+    color:#FFFFFF;
+}
+#footerCopyright{
+    font-size : 25px;
+    margin-left:5px;
+    color:#FFFFFF;
+}
+#footerSubscribeBox{
+    margin-top:190px;
+    margin-left:90px;
+    width:480px;
+    height:300px;
+}
+#footerSubscribeInfo{
+  font-size:25px;
+  color:#FFFFFF;
+}
+#footerSubscribeInput{
+    margin-top:45px;
+    width:350px;
+    height:35px;
+}
+#footerSubscribeButton{
+    height:40px;
+    width:80px;
+    margin-left: 10px;
+    background-color: transparent;
+    color:#FFFFFF;
+}

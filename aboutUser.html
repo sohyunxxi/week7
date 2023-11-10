@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link type="text/css" rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="headerMenu">Home</div> <!-- 메인 페이지-->
+        <div class="headerMenu">Groups</div> <!-- 그룹 가입-->
+        <div class="headerMenu">About</div>  <!-- 이 페이지 설명, 규칙-->
+        <div class="headerMenu">Contact</div> <!-- 도움, 이름 이메일 페이지 -->
+        <div class="headerMenu">Members</div> <!--로그인 안 한 페이지 만들기 -> 로그인 해서 확인-->
+        <div id="headerLoginBox">
+            <img id="headerLoginIcon" src="userIcon.png">
+            <div id="headerLogin">Log In</div> <!--로그인 페이지-->
+        </div>   
+    </header>
+    <main>
+        <div id="signupWordBox">
+            <h1 id="signupBigWord"> Sign up </h1> 
+            <span id="signupExplain">Be our member and enjoy all of our services!</span>
+        </div>
+        <form name="signupForm" action="signup.jsp" onsubmit="return inputCheck()">
+            <div id="signupBox">
+                <div id="signupShouldWrite">
+                    <h2 class="signupTextBox"> Your Info</h2>
+                    
+                    <span class="spanFont">Your Name *</span>
+                    <input name="name" class="inputBox" type="text" length="20" maxlength="18">
+
+                    <span class="spanFont">Id *</span> 
+                    <button type="button" onclick="return checkId(this.form)" name="idCheck"> id check</button>
+                    <input name="id_value" class="inputBox" type="text" length="20" maxlength="18">
+                    <input type="hidden" name="idDuplication" value="idUncheck">
+
+                    <span class="spanFont">Password *</span>
+                    <input name="pw_value1"class="inputBox" placeholder="ex ) 비밀번호 입력 " type="password" length="20" maxlength="18">
+
+                    <span class="spanFont">Password Check*</span>
+                    <input name="pw_value2"  class="inputBox" placeholder="ex ) 비밀번호 재입력 " type="password" length="20" maxlength="18">
+
+                    <span class="spanFont">Recovery Email *</span>
+                    <input name="email"class="inputBox" placeholder="ex ) ITastronaut@gmail.com" type="text" length="50" maxlength="55">
+                </div>
+
+                <div id="signupEtc">
+                    <h2 class="signupTextBox">Write down If  you want...</h2>
+                    <span class="spanFont">Your BirthDay</span>
+                    <input name="birth" class="inputBox" type="date" length="20" maxlength="18">
+                    <span class="spanFont">Phone Number</span>
+                    <input name="tel" class="inputBox" placeholder="ex ) 01012345678" type="text" length="20" maxlength="18">
+                    <span class="spanFont">Address</span>
+                    <input name="address" class="inputBox" placeholder="ex ) Incheon, Songdo" type="text" length="20" maxlength="18">
+                    <span class="spanFont">Gender</span>
+                    <div id="genderCkBox">
+                        <input name="gender" type="radio" name="rank" value="Male" onclick="selectGender(this.value)">Male
+                        <input name="gender" type="radio" name="rank" value="Female" onclick="selectGender(this.value)">Female
+                    </div>
+                </div>
+               
+            </div> 
+            <input type="submit" id="signupButton" value="submit" onclick="return inputCheck()">
+        
+            
+        </form>
+        <!-- <img src="back.png"> -->
+        
+    </main>
+    <footer>
+        <div>
+            <div id="footerIconBox">
+                <img class="footerIcon" src="faceBookLogo.png">
+                <img class="footerIcon" src="youtubeLogo.png">
+                <img class="footerIcon" src="twitterLogo.png">
+                <img class="footerIcon" src="instagramLogo.png">
+            </div>
+            <span id="footerCopyright">ⓒ 2023 by IT Astronaut</span>
+        </div>
+        <div id="footerSubscribeBox">
+            <span id="footerSubscribeInfo">Subscribe our updates & news!</span>
+            <input id="footerSubscribeInput" type = "text" size="50" maxlength="48">
+            <button id="footerSubscribeButton">Subscribe</button>
+        </div>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+    
+</html>
